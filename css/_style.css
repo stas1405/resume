@@ -112,9 +112,9 @@ a {
   color: #f5ae23;
 }
 
-.white-text {
+.blue-text {
   font-weight: bold;
-  color: #fff;
+  color: #a3d1ff;
 }
 
 .gray {
@@ -162,6 +162,7 @@ img {
 
 span {
   padding: 5px;
+  color: black;
 }
 
 #lets-connect {
