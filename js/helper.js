@@ -13,7 +13,7 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name" class="blue-text">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr/>';
+var HTMLheaderRole = '<span class="white-text">%data%</span><hr/>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="blue-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="blue-text">%data%</span></li>';
@@ -54,6 +54,10 @@ var HTMLonlineTitle = '<a href="#">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
+
+var HTMLfooterFacebook = '<a href="%data%" class="btn azm-social azm-size-48 azm-r-square  azm-facebook"><i class="fa fa-facebook"></i></a>';
+var HTMLfooterTwitter = '<a href="%data%" class="btn azm-social azm-size-48 azm-r-square azm-twitter"><i class="fa fa-twitter"></i></a>';
+var HTMLfooterGooglePlus = '<a href="%data%" class="btn azm-social azm-size-48 azm-r-square azm-google-plus"><i class="fa fa-google-plus"></i></a>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
@@ -126,7 +130,7 @@ function initializeMap() {
     var locations = [];
 
     // adds the single location property from bio to the locations array
-    locations.push(contacts.location);
+    locations.push(bio.contacts[0].location);
 
     // iterates through school locations and appends each location to
     // the locations array

@@ -12,8 +12,12 @@ h6 {
   padding:0;
   margin:0;
   font-family: "Roboto", sans-serif;
-}
+  font-size: 20px;
+  
+  }
+body {
 
+}
 .clear-fix {
   overflow: auto;
 }
@@ -117,6 +121,12 @@ a {
   color: #a3d1ff;
 }
 
+.white-text {
+  color: white;
+  padding-bottom: 10px;
+  clear:both;
+}
+
 .gray {
   background-color: #f3f3f3;
   padding-bottom: 10px;
@@ -130,6 +140,10 @@ a {
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+  opacity: 0.9;
+    background-image: url("../images/_bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .flex-box {
@@ -138,7 +152,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  padding: 1px;
 }
 
 .center-content {

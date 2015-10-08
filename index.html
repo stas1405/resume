@@ -83,9 +83,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         <div id="lets-connect" class="dark-gray">
             <h2 class="orange center-text">Let's Connect</h2>
             <li id="footerContacts" class="flex-box">
-                <a href="#" class="btn azm-social azm-size-48 azm-r-square azm-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="btn azm-social azm-size-48 azm-r-square azm-google-plus"><i class="fa fa-google-plus"></i></a>
-                <a href="https://www.facebook.com/stas.yartsev" class="btn azm-social azm-size-48 azm-r-square  azm-facebook"><i class="fa fa-facebook"></i></a>
+                
             </li>
         </div>
     </div>
@@ -161,6 +159,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
             document.getElementById(
                     'lets-connect').style
                 .display = 'none';
+            document.getElementById(
+                'footerContacts').style
+                .display = 'none';    
         }
         if (document.getElementById(
                 'map') === null) {
